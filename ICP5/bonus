@@ -1,1 +1,2 @@
-I think mean
+I think mean is better for filling null values in given dataset.
+or we can fill null values with nearest neighbour by calculating euclidean distance.
