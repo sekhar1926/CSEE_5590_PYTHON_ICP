@@ -31,7 +31,7 @@ for w in wtokens:
 
 #PARTS OF SPEECH TAGGING
 #nltk.download('averaged_perceptron_tagger')
-#print(nltk.pos_tag(wtokens))
+print(nltk.pos_tag(wtokens))
 
 
 #STEMMING
@@ -47,11 +47,14 @@ print(lemmatizer.lemmatize(input))
 #nltk.download('maxent_ne_chunker')
 #nltk.download('words')
 from nltk import wordpunct_tokenize, pos_tag, ne_chunk
-#print(ne_chunk(pos_tag(wordpunct_tokenize(input))))
+print(ne_chunk(pos_tag(wordpunct_tokenize(input))))
 
 
 # trigram
 from nltk.util import ngrams
 trigram = ngrams(wtokens,3)
-'''for i in trigram:
-    print(i)'''
+
+
+
+for i in trigram:
+    print(i)
