@@ -5,7 +5,6 @@ from keras import optimizers
 from keras.layers import MaxPooling2D,Convolution2D,Dropout,Flatten,Dense,Activation
 from keras.models import Sequential,save_model
 from keras.utils import np_utils
-from keras.applications.vgg16 import VGG16
 from keras.layers import merge,Input
 from keras.models import Model
 import os
