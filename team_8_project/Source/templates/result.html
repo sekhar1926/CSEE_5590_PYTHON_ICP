@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<!-- {{ans}} -->
+<div class="container" >
+   <div style="margin-top: 50px">
+{% for i in ans %}
+   <!-- {{i[1]}} -->
+      <div>
+         <img src="{{url_for('static', filename = i[1]) }}" class="img-responsive">
+      </div>
+      <div>
+         <h4 style="color:white;">Predicted class: {{i[0]}}</h4>
+      </div>
+
+
+
+{% endfor %}
+</div>
+</div>
+<!-- 
+{% for image_name in image_names %}
+    <img src="{{url_for('static', filename = image_name) }}">
+    {{image_name}}
+
+{% endfor %} -->
+
+
+{% endblock %}
